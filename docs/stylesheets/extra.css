@@ -1,0 +1,143 @@
+/* ============================================
+   Customizações para o site do Prof. Rodrigo
+   ============================================ */
+
+/* Cores institucionais (verde IFTM como sotaque sutil) */
+:root {
+  --md-primary-fg-color: #283593;
+  --md-primary-fg-color--light: #5f5fc4;
+  --md-primary-fg-color--dark: #001064;
+  --iftm-green: #00803c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 230;
+}
+
+/* Tipografia mais refinada para títulos */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+/* Cards de navegação na página inicial */
+.grid.cards {
+  gap: 1rem;
+}
+
+.grid.cards > :is(ul, ol) > li,
+.grid.cards .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  background: var(--md-default-bg-color);
+}
+
+.grid.cards > :is(ul, ol) > li:hover,
+.grid.cards .card:hover {
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Destaque para o badge IFTM no header */
+.iftm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.2em 0.6em;
+  background: var(--iftm-green);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Tabelas mais legíveis */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 600;
+}
+
+/* Blocos de código com cantos mais suaves */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* Admonitions (notas, avisos) com estilo refinado */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  border-width: 0;
+  border-left-width: 4px;
+  font-size: 0.78rem;
+}
+
+/* Footer mais discreto */
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Logo da home */
+.hero-section {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .subtitle {
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color--light);
+  font-weight: 400;
+}
+
+/* Botão call-to-action */
+.md-button.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Listas de tarefa com bullets melhores */
+.md-typeset ul li {
+  margin-bottom: 0.3em;
+}
+
+/* Impressão otimizada para imprimir páginas como handout */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer {
+    display: none !important;
+  }
+  .md-main__inner {
+    margin: 0 !important;
+  }
+  .md-content {
+    max-width: 100% !important;
+  }
+}

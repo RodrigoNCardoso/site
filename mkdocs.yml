@@ -1,0 +1,159 @@
+site_name: Prof. Rodrigo Nogueira Cardoso
+site_description: Materiais didáticos, pesquisa e recursos do Prof. Rodrigo Nogueira Cardoso — IFTM Campus Ituiutaba
+site_author: Rodrigo Nogueira Cardoso
+site_url: https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
+
+# IMPORTANTE: troque os dois campos abaixo pelo seu usuário e nome do repositório no GitHub
+repo_name: SEU-USUARIO/SEU-REPOSITORIO
+repo_url: https://github.com/SEU-USUARIO/SEU-REPOSITORIO
+edit_uri: edit/main/docs/
+
+copyright: >
+  Copyright &copy; 2026 Rodrigo Nogueira Cardoso —
+  IFTM Campus Ituiutaba
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - announce.dismiss
+  palette:
+    # Modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    # Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  favicon: assets/favicon.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SEU-USUARIO
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/SEU-PERFIL
+      name: LinkedIn
+    - icon: fontawesome/solid/graduation-cap
+      link: http://lattes.cnpq.br/SEU-LATTES
+      name: Currículo Lattes
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/SEU-ORCID
+      name: ORCID
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link para esta seção
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang:
+        - pt
+        - en
+  - tags
+
+nav:
+  - Início: index.md
+  - Disciplinas:
+      - disciplinas/index.md
+      - Automação Industrial:
+          - disciplinas/automacao-industrial/index.md
+          - Plano de Ensino: disciplinas/automacao-industrial/plano-de-ensino.md
+          - Apostila: disciplinas/automacao-industrial/apostila.md
+          - Aulas: disciplinas/automacao-industrial/aulas.md
+          - Atividades: disciplinas/automacao-industrial/atividades.md
+          - Avaliações: disciplinas/automacao-industrial/avaliacoes.md
+          - Referências: disciplinas/automacao-industrial/referencias.md
+      - Outras Disciplinas: disciplinas/outras/index.md
+  - Pesquisa:
+      - pesquisa/index.md
+      - Linha de Pesquisa: pesquisa/linha-de-pesquisa.md
+      - Publicações: pesquisa/publicacoes.md
+      - Projetos: pesquisa/projetos.md
+  - Extras:
+      - extras/index.md
+      - Recomendações: extras/recomendacoes.md
+      - Ferramentas: extras/ferramentas.md
+  - Sobre: sobre.md
