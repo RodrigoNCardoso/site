@@ -1,10 +1,10 @@
 site_name: Prof. Rodrigo Nogueira Cardoso
 site_description: Materiais didáticos, pesquisa e recursos do Prof. Rodrigo Nogueira Cardoso — IFTM Campus Ituiutaba
 site_author: Rodrigo Nogueira Cardoso
-site_url: https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
+site_url: https://rodnogcar.github.io/SEU-REPOSITORIO/
 
 # IMPORTANTE: troque os dois campos abaixo pelo seu usuário e nome do repositório no GitHub
-repo_name: SEU-USUARIO/SEU-REPOSITORIO
+repo_name: rodnogcar/SEU-REPOSITORIO
 repo_url: https://github.com/SEU-USUARIO/SEU-REPOSITORIO
 edit_uri: edit/main/docs/
 
