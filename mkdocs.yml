@@ -138,15 +138,22 @@ nav:
   - Início: index.md
   - Disciplinas:
       - disciplinas/index.md
-      - Automação Industrial:
-          - disciplinas/automacao-industrial/index.md
-          - Plano de Ensino: disciplinas/automacao-industrial/plano-de-ensino.md
-          - Apostila: disciplinas/automacao-industrial/apostila.md
-          - Aulas: disciplinas/automacao-industrial/aulas.md
-          - Atividades: disciplinas/automacao-industrial/atividades.md
-          - Avaliações: disciplinas/automacao-industrial/avaliacoes.md
-          - Referências: disciplinas/automacao-industrial/referencias.md
-      - Outras Disciplinas: disciplinas/outras/index.md
+      - Automação Industrial I:
+          - disciplinas/automacao-industrial-I/index.md
+          - Plano de Ensino: disciplinas/automacao-industrial-I/plano-de-ensino.md
+          - Apostila: disciplinas/automacao-industrial-I/apostila.md
+          - Aulas: disciplinas/automacao-industrial-I/aulas.md
+          - Atividades: disciplinas/automacao-industrial-I/atividades.md
+          - Avaliações: disciplinas/automacao-industrial-I/avaliacoes.md
+          - Referências: disciplinas/automacao-industrial-I/referencias.md
+      - Introdução a Lógica e Programação:
+          - disciplinas/a/index.md
+          - Plano de Ensino: disciplinas/introdução-a-lógica-e-programação/plano-de-ensino.md
+          - Apostila: disciplinas/introdução-a-lógica-e-programação/apostila.md
+          - Aulas: disciplinas/introdução-a-lógica-e-programação/aulas.md
+          - Atividades: disciplinas/introdução-a-lógica-e-programação/atividades.md
+          - Avaliações: disciplinas/introdução-a-lógica-e-programação/avaliacoes.md
+          - Referências: disciplinas/introdução-a-lógica-e-programação/referencias.md
   - Pesquisa:
       - pesquisa/index.md
       - Linha de Pesquisa: pesquisa/linha-de-pesquisa.md
