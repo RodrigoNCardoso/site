@@ -8,7 +8,7 @@ hide:
 
 <span class="iftm-badge">IFTM Campus Ituiutaba</span>
 
-*Professor de Automação Industrial — Pesquisador em sistemas autônomos e VTOL tilt-wing*
+*Professor da área de Controle e Automação
 
 ---
 
